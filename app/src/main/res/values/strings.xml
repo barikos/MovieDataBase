@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">MoviesDataBase</string>
+
+    <string name="tab_name_1">General</string>
+    <string name="tab_name_2">Genre</string>
+    <string-array name="tabs">
+        <item>@string/tab_name_1</item>
+        <item>@string/tab_name_2</item>
+    </string-array>
+</resources>
