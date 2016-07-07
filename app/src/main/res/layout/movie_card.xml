@@ -2,6 +2,67 @@
 <android.support.v7.widget.CardView
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="@dimen/card_album_radius"
+    xmlns:tools="http://schemas.android.com/tools">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/movie_card_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:src="@drawable/img_fest_1"/>
+        <TextView
+            android:id="@+id/movie_card_txt_main"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/primary_text"
+            android:textSize="@dimen/movie_card_primary_txt"
+            android:singleLine="true"
+            android:layout_toRightOf="@id/movie_card_img"
+            tools:text="Some movie"/>
+        <TextView
+            android:id="@+id/movie_card_txt_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/secondary_text"
+            android:textSize="@dimen/movie_card_second_txt"
+            android:layout_below="@id/movie_card_txt_main"
+            android:layout_alignParentRight="true"
+            tools:text="2016-08-15"/>
+        <TextView
+            android:id="@+id/movie_card_txt_rating"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/secondary_text"
+            android:textSize="@dimen/movie_card_second_txt"
+            android:layout_below="@id/movie_card_txt_date"
+            android:layout_alignParentRight="true"
+            tools:text="7.6"/>
+        <TextView
+            android:id="@+id/movie_card_txt_orig_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/secondary_text"
+            android:textSize="@dimen/movie_card_second_txt"
+            android:singleLine="true"
+            android:layout_toRightOf="@id/movie_card_img"
+            android:layout_toLeftOf="@id/movie_card_txt_date"
+            android:layout_below="@id/movie_card_txt_main"
+            tools:text="Some very long original title and somthing else"/>
+        <TextView
+            android:id="@+id/movie_card_txt_vote"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/secondary_text"
+            android:textSize="@dimen/movie_card_second_txt"
+            android:layout_toRightOf="@id/movie_card_img"
+            android:layout_below="@id/movie_card_txt_orig_title"
+            tools:text="Vote 6666"/>
+
+
+    </RelativeLayout>
 
 </android.support.v7.widget.CardView>

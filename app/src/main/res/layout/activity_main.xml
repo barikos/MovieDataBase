@@ -1,29 +1,38 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
+<android.support.v4.widget.DrawerLayout
+    android:id="@+id/main_drawer"
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
 
-    android:orientation="vertical"
-    tools:context=".ui.MainActivity">
-
-    <include
-        android:id="@+id/tool_bar"
-        layout="@layout/tool_bar"/>
-
-    <com.minutes.moviesdatabase.util.SlidingTabLayout
-        android:id="@+id/main_tabs"
+    <LinearLayout
+        android:id="@+id/main_lin_lay"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@color/primary">
-    </com.minutes.moviesdatabase.util.SlidingTabLayout>
+        android:orientation="vertical"
+        tools:context=".ui.MainActivity">
 
-    <android.support.v4.view.ViewPager
-        android:id="@+id/main_view_pager"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        <include
+            android:id="@+id/main_tool_bar"
+            layout="@layout/tool_bar"/>
 
-    </android.support.v4.view.ViewPager>
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/main_rec_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        </android.support.v7.widget.RecyclerView>
 
-</LinearLayout>
+    </LinearLayout>
+
+    <android.support.design.widget.NavigationView
+        android:id="@+id/main_nav_view"
+        android:layout_width="240dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="start"
+        app:menu="@menu/drawer_menu"
+        app:headerLayout="@layout/drawer_header">
+    </android.support.design.widget.NavigationView>
+</android.support.v4.widget.DrawerLayout>
+

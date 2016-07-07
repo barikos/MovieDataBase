@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="@string/drawer_video_type">
+        <menu>
+            <group
+                android:checkableBehavior="single">
+                <item
+                    android:id="@+id/nav_movies"
+                    android:title="@string/drawer_video_type_1"/>
+                <item
+                    android:id="@+id/nav_tv_shows"
+                    android:title="@string/drawer_video_type_2"/>
+            </group>
+        </menu>
+    </item>
+
+    <item android:title="@string/drawer_sort">
+        <menu>
+            <group
+                android:checkableBehavior="single">
+                <item
+                    android:id="@+id/nav_sort_popular"
+                    android:title="@string/drawer_sort_1"/>
+                <item
+                    android:id="@+id/nav_sort_top"
+                    android:title="@string/drawer_sort_2"/>
+            </group>
+        </menu>
+    </item>
+
+
+</menu>

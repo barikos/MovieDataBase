@@ -38,7 +38,7 @@ public class GenreFragment extends Fragment {
 
         MovieDBService service = ApiClient.getClient().create(MovieDBService.class);
 
-        Call<MovieResponse> call = service.getTopRatedMovies(Const.API_KEY);
+        Call<MovieResponse> call = service.getTopRatedMovies(Const.API_KEY,1);
         call.enqueue(new Callback<MovieResponse>() {
             @Override
             public void onResponse(Call<MovieResponse> call, Response<MovieResponse> response) {

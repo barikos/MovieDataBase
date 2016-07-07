@@ -7,4 +7,15 @@
         <item>@string/tab_name_1</item>
         <item>@string/tab_name_2</item>
     </string-array>
+
+    <string name="drawer_video_type">Type</string>
+    <string name="drawer_video_type_1">Movies</string>
+    <string name="drawer_video_type_2">TV shows</string>
+
+    <string name="drawer_sort">Sort by</string>
+    <string name="drawer_sort_1">Popular</string>
+    <string name="drawer_sort_2">Top rated</string>
+
+
+    <string name="drawer_item_1">Popular</string>
 </resources>
